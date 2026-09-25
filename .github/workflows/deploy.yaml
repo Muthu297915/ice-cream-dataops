@@ -40,7 +40,7 @@ jobs:
       IDP_CLIENT_ID: ${{ vars.IDP_CLIENT_ID }}
       IDP_CLIENT_SECRET: ${{ secrets.IDP_CLIENT_SECRET }}
 
-      # This project's environment variables
+    
       DATA_DEVELOPER_SOURCE_ID: ${{ vars.DATA_DEVELOPER_SOURCE_ID }}
 
       DATA_PIPELINE_OEE_CLIENT_ID: ${{ vars.DATA_PIPELINE_OEE_CLIENT_ID }}
