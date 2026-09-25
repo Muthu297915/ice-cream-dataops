@@ -53,8 +53,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Opt out of Toolkit data collection
+        run: cdf collect opt-out
       - name: Verify and Update Toolkit Authorization
-        run: yes | cdf auth verify
+        run: cdf auth verify --no-prompt
       - name: Build Toolkit Configurations
         run: cdf build --env=${{ matrix.environment }}
       - name: Deploy Toolkit Configurations
