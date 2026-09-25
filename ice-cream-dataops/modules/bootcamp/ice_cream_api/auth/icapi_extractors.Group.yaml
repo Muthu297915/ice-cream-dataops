@@ -1,4 +1,4 @@
-name: test
+name: icapi_extractor
 sourceId: {{ icapi_extractors_source_id }}
 capabilities:
   - datasetsAcl:
